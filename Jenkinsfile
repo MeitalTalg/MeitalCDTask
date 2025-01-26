@@ -4,7 +4,7 @@ pipeline {
         stage('build') {
             steps {
                 script {
-                    sh ' echo " starting to build" '
+                    sh ' echo "starting to build" '
                     sh ' sudo docker build -t simple-flask-app:latest .'
                     sh ' docker run -d -p 5000:5000 simple-flask-app ' 
                 }
