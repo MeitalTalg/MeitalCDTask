@@ -37,7 +37,7 @@ pipeline {
         always { 
             echo 'Delete the countiner'
             sh 'docker rm -f web '            
-         }
+        }
      }
- }  
-}
+}  
+
